@@ -28,8 +28,9 @@
 <img src="https://rawcdn.githack.com/pdxjie/feature-play/b9112f1fa0b246567cd6949f433da294f956d8a2/asset/me.png" style="width:250px;height:500px;">
 </div>
 <h3>小程序预览：</h3>
-
 <img src="https://rawcdn.githack.com/pdxjie/feature-play/736bec920931917373a0777635a719fc460c8fa0/asset/code.png" style="width:150px;height:150px;"/>
+
+> 由于后端服务使用的是微信云托管（略拉），偶尔会出现加载不出数据的问题，线上仅供参考，如想使用完整版还请将项目clone到本地启动即可！
 
 <h3>项目分析：</h3>
 <h4>前端目录结构：</h4>
@@ -76,3 +77,7 @@ feature-play-server
 - SpringBoot2.x
 - Jsonp
 - Redis
+
+<h3>作者寄语：</h3>
+
+> 开源不易，如果觉得项目不错，亦或对你有所用处，还望大家可以动动免费小手，赠予小派一个小星星以示鼓励
