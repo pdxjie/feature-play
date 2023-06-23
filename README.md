@@ -13,6 +13,7 @@
 
 |  子项目   | 描述  | 目录地址 | 
 |  ----  | ----  | ---- |
+| <a href="https://github.com/pdxjie/feature-play/tree/master/asset">⛱️Asset静态文件</a>  | 派多宝文档所需静态文件 | <a href="https://github.com/pdxjie/feature-play/tree/master/feature-play-applet)">asset</a>
 | <a href="https://github.com/pdxjie/feature-play/tree/master/feature-play-applet">🛸派多宝小程序前端</a>  | 微信小程序页面结构 | <a href="https://github.com/pdxjie/feature-play/tree/master/feature-play-applet">feature-play-applet</a>
 | <a href="https://github.com/pdxjie/feature-play/tree/master/feature-play-server">🛰️派多宝后端服务</a>  | Jsonp爬虫业务逻辑 | <a href="https://github.com/pdxjie/feature-play/tree/master/feature-play-server">feature-play-server</a>
 
