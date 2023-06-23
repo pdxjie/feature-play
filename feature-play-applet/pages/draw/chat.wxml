@@ -1,0 +1,34 @@
+<view style="height: 100%">
+    <view class="page">
+        <scroll-view class="box-msg-list" scrollTop="{{scrollTop}}" scrollWithAnimation="{{false}}" scrollX="{{false}}" scrollY="{{true}}">
+            <view class="list" wx:if="{{lists&&lists.length>0}}">
+                <view class="message-group" wx:for="{{lists}}">
+                    <view bindlongpress="copyText" class="message user" data-index="{{index}}">
+                        <view class="avatar" style="background: #9aa37e">
+                            <image mode="widthFix" src="{{siteroot}}/static/img/ic_user.png"></image>
+                        </view>
+                        <view class="text">
+                            <textComponent bindcopy="copyText" text="{{item.message}}"></textComponent>
+                        </view>
+                    </view>
+                    <view class="message ai">
+                        <view class="avatar">
+                            <image mode="widthFix" src="{{siteroot}}/static/img/ic_ai.png"></image>
+                        </view>
+                        <view class="text">
+                            <imageComponent bindpreview="previewImage" bindretry="retryDraw" item="{{item}}"></imageComponent>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="box-input">
+            <view class="input">
+                <textarea bindconfirm="sendConfirm" confirmType="send" contenteditable="true" fixed="true" maxlength="300" value="{{message}}" placeholder="输入要求和场景描述" type="text"></textarea>
+                <button bindtap="submitDraw" class="btn-send">
+                    <image mode="widthFix" src="/images/ic_send.png"></image>
+                </button>
+            </view>
+        </view>
+    </view>
+</view>

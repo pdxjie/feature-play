@@ -5,7 +5,9 @@
         "pages/dm/newDanMu",
         "pages/color/color",
         "pages/ruler/ruler",
-        "pages/figure/figure"
+        "pages/figure/figure",
+        "pages/draw/index",
+		    "pages/draw/chat"
     ],
     "subPackages": [
       {
@@ -63,6 +65,12 @@
         "text": "首页",
         "iconPath": "./static/main.png",
         "selectedIconPath": "./static/main-selected.png"
+      },
+      {
+        "pagePath": "pages/draw/chat",
+        "text": "绘画",
+        "iconPath": "./static/draw-no.png",
+        "selectedIconPath": "./static/draw-selected.png"
       },
       {
         "pagePath": "pages/me/me",

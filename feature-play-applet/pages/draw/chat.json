@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "AI绘画",
+    "usingComponents": {
+        "textComponent": "/components/message/text",
+        "imageComponent": "/components/message/image"
+    }
+}
