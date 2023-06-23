@@ -1,0 +1,19 @@
+<view class="body">
+  <van-panel title="基本信息">
+    <van-skeleton title avatar row="25" loading="{{ loading }}">
+      <view class="base-info">
+        <view class="base-image">
+          <image src="{{sickDetail.src}}" mode="widthFix heightFix"/>
+        </view>
+        <view class="desc">
+          {{sickDetail.desc}}
+        </view>
+      </view>
+    </van-skeleton>
+    
+    <view class="cell-info">
+      <van-cell wx:for="{{sickDetail.cells}}" wx:key="index" title="{{item.title}}" value="{{item.val}}" />
+    </view>
+
+  </van-panel>
+</view>

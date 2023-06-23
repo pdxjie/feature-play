@@ -1,0 +1,10 @@
+<view class="wrap">
+    <view bindtouchend="handleTouchEnd" bindtouchmove="handleTouchMove" bindtouchstart="handleTouchStart" class="content {{animate?'animate':''}}" style="transform: translateX({{translateX*2}}rpx)">
+        <slot></slot>
+    </view>
+    <view class="action-wrap">
+        <view bindtap="handleAction" class="action del" data-type="del">
+            <text>删除</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,36 @@
+<view class="container">
+    <view class="ybtop">
+        <view class="ybimg">
+            <image class="ybimg-z ybimg-i {{ybimgClass}}" src="{{ybfximg}}"></image>
+            <image class="ybimg-f ybimg-i {{ybimgClass}}" src="{{ybzimg}}"></image>
+        </view>
+        <view class="ybthis {{resultHidden}}">
+            <view class="ybresult">
+                <image class="ybresult-i" src="{{ybresult.src}}" style="margin-left: {{ybresultVal==0?'1px':'0'}};"></image>
+            </view>
+            <text class="ybresult-text">
+                <text class="ybresult-text-ret">{{ybresult.text}}</text>
+                <text class="ybresult-text-con">{{ybresult.content}}</text>
+            </text>
+        </view>
+        <view class="ybfirst {{firstHidden}}">
+            <view class="ybfirst-d">
+                <view class="ybinput">
+                    <input bindblur="titleTextBlur" catchtap="inputTitle" class="input ybinput-i" focus="{{inputFocus}}" maxlength="50" name="titleText" placeholder="{{inputHolder}}" value="{{inputValue}}"></input>
+                </view>
+            </view>
+            <text class="ybfirst-con">{{infoMessage}}</text>
+        </view>
+    </view>
+    <view class="ybbton">
+        <button bindgetuserinfo="getUserInfo" bindtap="doPyb" class="ybbton-i" disabled="{{lock}}" openType="getUserInfo"> {{resultPao?'我也拋一个':firstPao?'抛硬币':'再抛一次'}} </button>
+        <view class="ybshares {{retryHidden}}">
+            <image bindtap="info" class="shareimg-i" src="{{aboutimg}}"></image>
+            <image bindtap="retry" class="shareimg-i" src="{{retryimg}}"></image>
+            <button class="shareimg-share-button" openType="share" plain="true">
+                <image class="shareimg-i" src="{{shareimg}}"></image>
+            </button>
+        </view>
+
+    </view>
+</view>

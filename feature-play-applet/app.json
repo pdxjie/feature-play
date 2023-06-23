@@ -1,0 +1,100 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/me/me",
+        "pages/dm/newDanMu",
+        "pages/color/color",
+        "pages/ruler/ruler",
+        "pages/figure/figure"
+    ],
+    "subPackages": [
+      {
+          "root": "pagesA/",
+          "pages": [
+            "pages/mm/mm",
+            "pages/protractor/protractor",
+            "pages/imagepress/imagepress",
+            "pages/time/time",
+            "pages/coins/coins",
+            "pages/about/about",
+            "pages/index/index",
+            "pages/dogArticle/dogArticle",
+            "pages/menu/menu",
+            "pages/menu-item/menu-item",
+            "pages/sick/sick",
+            "pages/sick-detail/sick-detail",
+            "pages/mnld/mnld",
+            "pages/ld/ld",
+            "pages/24/24",
+            "pages/24/count",
+            "pages/dh/dh",
+            "pages/2048/2048",
+            "pages/success/index"
+          ]
+      },
+      {
+        "root": "pagesB/",
+        "pages": [
+          "pages/zsz/zsz",
+          "pages/zsz/sz",
+          "pages/networkSpeed/networkSpeed",
+          "pages/blood/blood",
+          "pages/blind/blind",
+          "pages/clock/clock",
+          "pages/see-img/see-img",
+          "pages/quse/index",
+          "pages/quse/color",
+          "pages/quse/detail",
+          "pages/randomNum/randomNum",
+          "pages/tax/tax",
+          "pages/myphone/myphone",
+          "pages/joke/joke"
+        ]
+    }
+  ],
+    "tabBar": {
+      "color": "#bfbfbf",
+      "selectedColor": "#228B22",
+      "backgroundColor": "#FFFFFF",
+      "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/main.png",
+        "selectedIconPath": "./static/main-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "本站",
+        "iconPath": "./static/system.png",
+        "selectedIconPath": "./static/system-selected.png"
+      }
+    ]
+  },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "派多宝",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#FFF"
+    },
+    "sitemapLocation": "sitemap.json",
+    "usingComponents": {
+      "van-panel": "@vant/weapp/panel/index",
+      "van-skeleton": "@vant/weapp/skeleton/index",
+      "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+      "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+      "van-tag": "@vant/weapp/tag/index",
+      "van-empty": "@vant/weapp/empty/index",
+      "van-cell-group":"@vant/weapp/cell-group",
+      "van-cell":"@vant/weapp/cell/index",
+      "van-card": "@vant/weapp/card/index",
+      "van-loading": "@vant/weapp/loading/index",
+      "van-notice-bar": "@vant/weapp/notice-bar/index",
+      "van-search": "@vant/weapp/search/index",
+      "van-popup": "@vant/weapp/popup/index",
+      "van-dialog": "@vant/weapp/dialog/index"
+    }
+}

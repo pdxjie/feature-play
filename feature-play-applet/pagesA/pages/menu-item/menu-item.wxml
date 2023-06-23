@@ -1,0 +1,30 @@
+<view class="info">
+  <van-skeleton title row="103" loading="{{ loading }}">
+    <!-- <view class="title">
+    <text>{{menuDetail.title}}</text>
+    </view> -->
+    <view class="cover">
+      <image src="{{menuDetail.imgUrl}}" mode="widthFix"></image>
+    </view>
+
+    <view class="mixInfo">
+      <van-panel title="《 {{ menuDetail.title }} 》配料信息：">
+        <van-cell-group inset>
+          <van-cell wx:for="{{menuDetail.mixtureInfos}}" wx:key="index" title="{{item.mixtureName}}" value="{{item.measure}}" />
+        </van-cell-group>
+      </van-panel>
+    </view>
+
+    <view>
+      <van-panel title="烹饪步骤">
+        <van-card
+          wx:for="{{menuDetail.steps}}"
+          wx:key="index"
+          title="第{{index+1}}步"
+          desc="{{item.desc}}"
+          thumb="{{ item.stepUrl }}"
+        />
+      </van-panel>
+    </view>
+  </van-skeleton>
+</view>

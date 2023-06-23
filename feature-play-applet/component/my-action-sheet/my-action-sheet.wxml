@@ -1,0 +1,18 @@
+<view class="all">
+    <view class="action-sheet" wx:if="{{isShowPanel}}">
+        <view bindtap="closePanel" class="action-sheet-masker"></view>
+        <view class="action-sheet-panel" style="height:{{235+actionList.length*110}}rpx;">
+            <view class="action-sheet-content">
+                <view class="action-sheet-title" wx:if="{{!!title}}">
+                    <text>{{title}}</text>
+                </view>
+                <view bindtap="choose" class="action-sheet-selected {{index+2==item.length?'border-bottom':''}} {{index+1==item.length?'make-radius':''}}" data-idx="{{index}}" wx:for="{{actionList}}">
+                    <text>{{item.title}}</text>
+                </view>
+            </view>
+            <view bindtap="closePanel" class="action-sheet-cancel">
+                <text>取消</text>
+            </view>
+        </view>
+    </view>
+</view>

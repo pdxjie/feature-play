@@ -1,0 +1,45 @@
+        <view class="result">
+            <view class="result-num">{{screenStr}}</view>
+             <view class="result-op">{{screenData}}</view>
+   
+        </view>
+        <radio-group class="reg" bindchange="radioChange" >
+            <label   wx:for="{{hex}}" wx:key="mm">
+        <view class="cu-form-group" style="background-color: #eee;">
+			<radio  checked="{{item.checked}}"  value="{{item.name}}"><view style="color:  black; background-color: #eee;">{{item.value}}</view></radio>
+		</view>
+            </label>
+        </radio-group>
+        <view class="btns">
+        <view >
+            <view bindtap="btnClick" hover-class="bg" id="{{clear}}">AC</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numA}}">A</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numB}}">B</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numC}}">C</view>
+        </view>
+        <view >
+            <view bindtap="btnClick" hover-class="bg" id="{{num7}}">7</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num8}}">8</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num9}}">9</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numD}}">D</view>
+        </view>
+        <view >
+            <view bindtap="btnClick" hover-class="bg" id="{{num4}}">4</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num5}}">5</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num6}}">6</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numE}}">E</view>
+        </view>
+        <view >
+            <view bindtap="btnClick" hover-class="bg" id="{{num1}}">1</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num2}}">2</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num3}}">3</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numF}}">F</view>
+        </view>
+        <view >
+            <view bindtap="btnClick" hover-class="bg" id="{{numdo}}">.</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{num0}}">0</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{numT}}">00</view>
+            <view bindtap="btnClick" hover-class="bg" id="{{del}}">DEL</view>
+        </view>
+    </view>
+

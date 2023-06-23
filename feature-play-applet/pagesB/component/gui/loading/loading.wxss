@@ -1,0 +1,115 @@
+.g-loading,.g-loading-box {
+    position: relative;
+    padding: 30rpx 0;
+}
+
+.g-loading::after {
+    content: '';
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    text-indent: -9999px;
+    border-radius: 50%;
+    border-top: 4rpx solid rgba(44,169,225,1);
+    border-right: 4rpx solid rgba(0,0,0,.1);
+    border-bottom: 4rpx solid rgba(0,0,0,.1);
+    border-left: 4rpx solid rgba(0,0,0,.1);
+    animation: loading 2s infinite linear;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.g-loading-box {
+    height: 44rpx;
+    box-sizing: initial;
+}
+
+.g-loading-box::before,.g-loading-box::after {
+    content: "";
+    width: 44rpx;
+    left: 50%;
+    margin-left: -22rpx;
+    position: absolute;
+}
+
+.g-loading-box::before {
+    height: 10rpx;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.1);
+    bottom: 12rpx;
+    animation: shadow .5s linear infinite;
+}
+
+.g-loading-box::after {
+    height: 44rpx;
+    border-radius: 8rpx;
+    background: rgba(102,102,102,1);
+    animation: loading-box .5s linear infinite;
+}
+
+@-webkit-keyframes loading-box {
+    17% {
+        border-bottom-right-radius: 8rpx;
+    }
+
+    25% {
+        transform: translateY(10rpx) rotate(22.5deg);
+    }
+
+    50% {
+        transform: translateY(20rpx) scale(1,0.9) rotate(45deg);
+        border-bottom-right-radius: 40rpx;
+    }
+
+    75% {
+        transform: translateY(10rpx) rotate(67.5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(90deg);
+    }
+}
+
+@keyframes loading-box {
+    17% {
+        border-bottom-right-radius: 8rpx;
+    }
+
+    25% {
+        transform: translateY(10rpx) rotate(22.5deg);
+    }
+
+    50% {
+        transform: translateY(20rpx) scale(1,0.9) rotate(45deg);
+        border-bottom-right-radius: 40rpx;
+    }
+
+    75% {
+        transform: translateY(10rpx) rotate(67.5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(90deg);
+    }
+}

@@ -1,0 +1,168 @@
+<view class="yms">
+  <text style="font-size:0.9rem;margin-left: 10px;margin-top: 10px;margin-bottom: 20px;color:#656565">时光荏苒</text>
+</view>
+<view class="ym">
+  <view class="sidebar-box classListBox">
+    <view class="aside aside-count">
+      <view class="content">
+        <view class="item" id="dayProgress">
+          <view class="title">正在经历今年的{{year}}月份</view>
+          <view class="progress">
+            <view class="progress-bar">
+              <view class="progress-inner progress-inner-1" style="width: {{yearScale}}%;"></view>
+            </view>
+            <view class="progress-percentage">{{yearScale}}%</view>
+          </view>
+        </view>
+        <view class="item" id="weekProgress">
+          <view class="title">这个月已过去{{month}}天</view>
+          <view class="progress">
+            <view class="progress-bar">
+              <view class="progress-inner progress-inner-2" style="width: {{monthScale}}%;"></view>
+            </view>
+            <view class="progress-percentage">{{monthScale}}%</view>
+          </view>
+        </view>
+        <view class="item" id="monthProgress">
+          <view class="title">这周已过去{{day}}天</view>
+          <view class="progress">
+            <view class="progress-bar">
+              <view class="progress-inner progress-inner-3" style="width: {{dayScale}}%;"></view>
+            </view>
+            <view class="progress-percentage">{{dayScale}}%</view>
+          </view>
+        </view>
+        <view class="item" id="yearProgress">
+          <view class="title">今天已过去{{time}}个小时</view>
+          <view class="progress">
+            <view class="progress-bar">
+              <view class="progress-inner progress-inner-4" style="width: {{timeScale}}%;"></view>
+            </view>
+            <view class="progress-percentage">{{timeScale}}%</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<view class="yms">
+  <text style="font-size:0.9rem;margin-left: 10px;margin-top: 10px;margin-bottom: 20px;color:#656565">生活天地</text>
+</view>
+<view class="ym">
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goMenu">
+    <image class="ym-img" src="../../static/img3/menu.png"></image>
+    <view class="ym-i _i">菜谱大全</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goSick">
+    <image class="ym-img" src="../../static/img3/sick.png"></image>
+    <view class="ym-i _i">疾病百科</view>
+  </view>
+</view>
+
+<view class="yms">
+  <text style="font-size:0.9rem;margin-left: 10px;margin-top: 10px;margin-bottom: 20px;color:#656565">热门娱乐</text>
+</view>
+<view class="ym">
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goMn">
+    <image class="ym-img" src="../../static/img3/ld.png"></image>
+    <view class="ym-i _i">模拟来电</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goTS">
+    <image class="ym-img" src="../../static/img3/tsb.png"></image>
+    <view class="ym-i _i">调色板</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goMyPhone">
+    <image class="ym-img" src="../../static/img3/sj.png"></image>
+    <view class="ym-i _i">手机检测</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goDanMu">
+    <image class="ym-img" src="../../static/img3/dm.png"></image>
+    <view class="ym-i _i">手持弹幕</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goRule">
+    <image class="ym-img" src="../../static/img3/cz.png"></image>
+    <view class="ym-i _i">微信尺子</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goDH">
+    <image class="ym-img" src="../../static/img3/cy.png"></image>
+    <view class="ym-i _i">常用电话</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goYX">
+    <image class="ym-img" src="../../static/img3/24.png"></image>
+    <view class="ym-i _i">24点游戏</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="go2048">
+    <image class="ym-img" src="../../static/img3/2048.png"></image>
+    <view class="ym-i _i">2048</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goSZ">
+    <image class="ym-img" src="../../static/img3/sz.png"></image>
+    <view class="ym-i _i">掷骰子</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goCoins">
+    <image class="ym-img" src="../../static/img3/coins.png"></image>
+    <view class="ym-i _i">抛硬币</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goDog">
+    <image class="ym-img" src="../../static/img3/dog.png" mode="heightFix"></image>
+    <view class="ym-i _i">狗屁不通文章生成器</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goJoke">
+    <image class="ym-img" src="../../static/img3/joking.png" mode="heightFix"></image>
+    <view class="ym-i _i">笑话大全</view>
+  </view>
+</view>
+
+<view class="yms">
+  <text style="font-size:0.9rem;margin-left: 10px;margin-top: 10px;margin-bottom: 20px;color:#656565">效率计算</text>
+</view>
+<view class="ym">
+
+  <view class="ym-li" hoverClass="vv-hover" bindtap="go6">
+    <image class="ym-img" src="../../static/img1/sc.png"></image>
+    <view class="ym-i _i">身材计算</view>
+  </view>
+
+  <view class="ym-li" hoverClass="vv-hover" bindtap="go21">
+    <image class="ym-img" src="../../static/img1/gz.png"></image>
+    <view class="ym-i _i">工资计算器</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goab">
+    <image class="ym-img" src="../../static/img3/xx.png"></image>
+    <view class="ym-i _i">血型计算器</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="gosm">
+    <image class="ym-img" src="../../static/img3/sm.png"></image>
+    <view class="ym-i _i">色盲测试</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="go27">
+    <image class="ym-img" src="../../static/img2/js1.png"></image>
+    <view class="ym-i _i">进制计算器</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="gocs">
+    <image class="ym-img" src="../../static/img3/cs.png"></image>
+    <view class="ym-i _i">网络测速</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="go28">
+    <image class="ym-img" src="../../static/img2/js2.png"></image>
+    <view class="ym-i _i">量角器</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="goip">
+    <image class="ym-img" src="../../static/img3/sz1.png"></image>
+    <view class="ym-i _i">全屏时钟</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="go29">
+    <image class="ym-img" src="../../static/img2/js3.png"></image>
+    <view class="ym-i _i">计时器</view>
+  </view>
+  <view class="ym-li" hoverClass="vv-hover" bindtap="gosjs">
+    <image class="ym-img" src="../../static/img3/sjs.png"></image>
+    <view class="ym-i _i">随机数字</view>
+  </view>
+</view>
+
+<view class="yms">
+</view>
+<view class="ym"></view>

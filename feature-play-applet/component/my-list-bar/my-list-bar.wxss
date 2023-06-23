@@ -1,0 +1,51 @@
+.list-bar {
+    width: 750rpx;
+    height: 120rpx;
+    display: flex;
+    border-bottom: 3rpx solid #e5e5e5;
+}
+
+.list-bar:active {
+    background-color: #d9d9d9;
+}
+
+.list-bar-left {
+    width: 400rpx;
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+}
+
+.list-bar-icon {
+    width: 65rpx;
+    height: 100rpx;
+    margin: 0 30rpx;
+}
+
+.list-bar-title {
+    color: #292929;
+    font-size: 30rpx;
+    font-weight: 700;
+}
+
+.list-bar-right {
+    width: 350rpx;
+    height: 120rpx;
+    display: inline-block;
+    justify-content: flex-end;
+    align-items: center;
+    color: grey;
+}
+
+.list-bar-go {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 20rpx;
+}
+
+.list-bar-detail {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 120rpx;
+    font-size: 32rpx;
+}

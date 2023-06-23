@@ -1,0 +1,20 @@
+<view>
+    <view class="red">
+        <text>R</text>
+        <slider bindchanging="changered" blockSize="12" max="255" min="0"></slider>
+        <text>{{rvalue}}</text>
+    </view>
+    <view class="red">
+        <text>G</text>
+        <slider bindchanging="changegreen" blockSize="12" max="255" min="0"></slider>
+        <text>{{gvalue}}</text>
+    </view>
+    <view class="red">
+        <text>B</text>
+        <slider bindchanging="changeblue" blockSize="12" max="255" min="0"></slider>
+        <text>{{bvalue}}</text>
+    </view>
+    <input bindinput="inputcolor" maxlength="7" type="text" value="#{{color16}}"></input>
+    <view class="block" style="background:{{colors}}"></view>
+
+</view>

@@ -1,0 +1,9 @@
+<view class="body-dog"> 
+  <view class="opera" style="width: 100%;">
+    <input bindinput='getValue' style="height: 70rpx;padding-left: 10px;" placeholder="请输入关键字"/>
+  </view>
+  <button style="width: 100%;" size="mini" type="primary" bindtap="generatorArticle">生成文章</button>
+  <view class="content">
+    <textarea  placeholder="内容显示..." value="{{content}}" maxlength="1000000"></textarea>
+  </view>
+</view>

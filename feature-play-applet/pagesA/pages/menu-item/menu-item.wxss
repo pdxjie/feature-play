@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+  font-size: 35rpx;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.cover {
+  width: 750rpx;
+}
+.cover image {
+  width: 100%;
+  height: 100%;
+}
+.van-card__desc {
+  font-size: 29rpx!important;
+}
+.van-card__desc {
+  margin-top: 18rpx!important;
+}

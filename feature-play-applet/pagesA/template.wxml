@@ -1,0 +1,22 @@
+<template name="top">
+    <cu-custom isBack="{{true}}">
+        <view slot="backText">返回</view>
+        <view slot="content">{{title}}</view>
+    </cu-custom>
+</template>
+<template name="change">
+    <view style="overflow:hidden">
+      
+            <button bindtap="clearInput" class="button_compress">清空记录</button>
+    
+        <view class="text-center">
+            
+        </view>
+    </view>
+</template>
+<template name="ad">
+        <view>
+      <ad-custom unit-id="{{appConfig.ad.wxcustomA}}" ></ad-custom>
+    </view>
+   
+</template>

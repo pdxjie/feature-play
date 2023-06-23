@@ -1,0 +1,33 @@
+.yb-about {
+    height: 100vh;
+    margin: 15px 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.yba-img {
+    background: #fff;
+    float: left;
+    height: 100vh;
+    padding: 0 10px 0 15px;
+    width: 26%;
+}
+
+.yba-img image {
+    width: 100%;
+}
+
+.yba-info {
+    margin-right: 15px;
+}
+
+text {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.line {
+    background: #f1f1f1;
+    height: 1px;
+    margin: 10px 0;
+}

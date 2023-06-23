@@ -1,0 +1,40 @@
+page {
+    margin: 0;
+    padding: 0;
+}
+wx-slider .wx-slider-track { background: linear-gradient(to right, #ff4444 0%, #FF4444 50%, #FF4444 100%); }
+.red {
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    padding: 0 2px 0 6px;   
+}
+
+slider {
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+}
+
+text {
+    width: 8vw;
+}
+
+.block,.colors {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    height: 30vh;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+input {
+    border: 2px solid #ff4444;
+    border-radius: 50rpx;
+    margin: 0 10px;
+    padding: 0 10px;
+    text-align: center;
+}

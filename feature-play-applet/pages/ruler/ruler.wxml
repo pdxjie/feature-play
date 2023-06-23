@@ -1,0 +1,4 @@
+<canvas canvasId="ruler" class="ruler" style="width:{{width}}px;height:{{height}}px"></canvas>
+<view class="show">分辨率系数：{{coefficient}}</view>
+<slider activeColor="#292929" bindchange="changeCoefficient" blockColor="#292929" class="slider" max="70" min="30" value="{{coefficient}}"></slider>
+<my-button bind:btnClick="reset" class="my-button" iconSrc="{{imgUrl}}" showIcon="true" text="重置" type="medium"></my-button>

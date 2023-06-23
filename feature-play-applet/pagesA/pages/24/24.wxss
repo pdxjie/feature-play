@@ -1,0 +1,42 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-btn {
+  position:relative;
+  margin:0 20rpx;
+  padding:0;
+  box-sizing:border-box;
+  font-size:32rpx;
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+  overflow:hidden;
+  display: inline-block;
+  width: 300rpx;
+  height: 85rpx;
+  background-color: #7ca4d5;
+  color: #fffeff;
+  line-height: 85rpx;
+}
+.welcome {   
+    z-index: 3;   
+    white-space: nowrap;
+    font-size: 40rpx;
+    color: #ec9601;
+    top:150rpx;
+    margin-bottom: 30rpx;
+}
+.specification-box{   
+    margin: 100rpx 2rem 200rpx;
+    color: #333;
+    font-size: 24rpx;
+    line-height:1.5;
+}
+.grade-box{
+    margin: 30rpx 0 10rpx;    
+}
+label{margin: 10rpx;}
+radio{vertical-align: middle; margin-right: 10rpx}

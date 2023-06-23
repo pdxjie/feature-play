@@ -1,0 +1,181 @@
+.g-loading {
+    display: inline-block;
+    margin-right: 8rpx;
+    vertical-align: middle;
+}
+
+.g-loading::after {
+    animation: loading 2s linear infinite;
+    border: 2rpx solid rgba(0,0,0,.1);
+    border-radius: 50%;
+    border-top-color: #2ca9e1;
+    content: "";
+    display: block;
+    height: 28rpx;
+    margin: 0 auto;
+    position: relative;
+    text-indent: -9999px;
+    width: 28rpx;
+    z-index: 2;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.flex-bar {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+    overflow: hidden;
+}
+
+.color-gray {
+    color: #999;
+}
+
+.color-blue {
+    color: #2ca9e1;
+}
+
+.border-right,.border-top {
+    position: relative;
+}
+
+.border-right::after {
+    border-right: 1px solid rgba(0,0,0,.07);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleX(.5);
+    width: 1px;
+}
+
+.border-top::after {
+    border-bottom: 1px solid rgba(0,0,0,.07);
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleY(.5);
+    transform-origin: 50% 100%;
+    width: 100%;
+}
+
+.g-btn {
+    display: block;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+}
+
+.g-btn:active {
+    opacity: .7;
+}
+
+.g-fixed-bar,.g-mask {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.g-mask {
+    background-color: rgba(47,64,80,.28);
+    z-index: 999;
+}
+
+.g-fixed-bar {
+    box-pack: center;
+    box-orient: vertical;
+    box-align: center;
+    display: box;
+    z-index: 9999;
+}
+
+.g-modal-bar {
+    background-color: #fff;
+    border-radius: 12rpx;
+    box-shadow: 0 4rpx 64rpx rgba(47,64,80,.12);
+    font-size: 28rpx;
+    margin: 40vh auto;
+    width: 560rpx;
+}
+
+.g-modal-cen {
+    padding: 30rpx;
+    text-align: center;
+}
+
+.g-onemsg {
+    font-size: 30rpx;
+    font-weight: 700;
+    padding-top: 20rpx;
+}
+
+.g-twomsg {
+    font-size: 28rpx;
+    padding-top: 20rpx;
+}
+
+.g-mapping {
+    border-radius: 12rpx;
+    height: 144rpx;
+    margin: 32rpx 0 16rpx;
+    width: 144rpx;
+}
+
+.animate {
+    animation-duration: .3s;
+}
+
+.zoomIn {
+    animation-name: zoomIn;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

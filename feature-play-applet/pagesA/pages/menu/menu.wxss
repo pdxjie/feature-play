@@ -1,0 +1,31 @@
+.card{
+  /*卡片的宽度*/  
+  width: 29.3%;
+  /*左外边距，这里代表距离最左边的距离*/
+  margin-top: 3%;
+  margin-right: 2%;
+  margin-left: 2%;
+  /*卡片的高度。*/
+  height: 210rpx;
+  /*背景色，可以自己更换*/
+  background: #FFF;
+  /* radius是卡片的边框的圆润c程度
+    shadow是阴影效果，四个值分别为水平阴影，垂直阴影，模糊距离，阴影的颜色。
+  */
+  border-radius: 30rpx;
+  box-shadow: 5px 5px 5px #cdcfcf;
+}
+.card image {
+  width: 100%;
+}
+.menu-name {
+  text-align: center;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  padding: 0 20rpx;
+}
+.menu-recommend {
+  display: flex;
+  flex-wrap: wrap;
+}

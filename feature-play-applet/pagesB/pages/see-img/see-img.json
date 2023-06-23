@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "disableScroll": true,
+    "usingComponents": {
+        "page-title": "../../component/page-title/page-title",
+        "g-button": "../../component/gui/button/button"
+    }
+}

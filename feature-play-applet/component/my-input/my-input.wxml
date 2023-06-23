@@ -1,0 +1,7 @@
+<view class="all">
+    <view class="input-box" >
+        <image class="input-icon" mode="aspectFit" src="{{iconSrc}}" wx:if="{{showIcon=='true'}}"></image>
+        <input bindinput="onChange" class="input" id="search-input" maxlength="{{maxlength}}" placeholder="{{placeholder}}" style="padding-left:{{showIcon!='true'?'30rpx':''}};width:{{showIcon!='true'?'740rpx':'530rpx'}};" type="{{type}}" value="{{inputValue}}"></input>
+        <image bindtap="del" class="input-delete" mode="aspectFit" src="/images/common/delete.png" wx:if="{{delShow}}"></image>
+    </view>
+</view>

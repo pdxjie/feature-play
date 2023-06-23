@@ -1,0 +1,12 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "厨房一角",
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "厨房一角",
+    "backgroundColor": "#4fc08d",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  }
+}

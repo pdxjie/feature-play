@@ -1,0 +1,82 @@
+<view class="container">
+    <view style="padding-top: 50px;">
+        <button bindtap="chooseImage" class="butss">选择图片</button>
+    </view>
+    <view class="btn-wrap" style="margin-top: {{isShowTips?'10px':'20px'}}"></view>
+    <view class="tips-wrap" wx:if="{{isShowTips}}">
+        <text class="tips">💡支持精确设置大小精确到KB；</text>
+        <text class="tips">💡图压采用无服务器运行压缩；</text>
+    </view>
+    <view class="image-info-wrap" wx:if="{{size}}">
+        <view class="text-wrap">
+            <view class="desc-wrap">
+                <text style="font-size: 20px; line-height: 0px; font-weight: 600;">
+          图片大小：<text class="highlight">{{size}}</text> KB
+        </text>
+                <text bindtap="handleDetail" class="highlight" style="font-size: 18px;">{{isShowImageInfo?'收起':'图片信息'}}
+        </text>
+            </view>
+            <view class="input-wrap">
+                <view style="font-size: 18px; margin: 20px 0 10px 0; font-weight: 600;">要把这张图片压缩到多少 KB 以内？</view>
+                <view style="font-size: 14px; color: #bbb">💡压缩后图片将小于设定体积并尽可能保持接近</view>
+                <view style="font-size: 14px; color: #bbb">💡如果想压缩到极致，请直接拖到 0</view>
+                <view style="font-size: 14px; color: #bbb">💡1 MB = 1024 KB</view>
+                <slider showValue activeColor="#000" bindchange="handleSliderChange" blockSize="28" class="number-input" disabled="{{compressing}}" max="{{size}}" min="0" value="{{size*0.7}}"></slider>
+            </view>
+            <view class="image-info {{isShowImageInfo?'show-image-info':''}}">
+                <view>
+                    <text style="font-weight: 500;">图片宽度：</text>{{exif['Image Width'].description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">图片高度：</text>{{exif['Image Height'].description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">生产商：</text>{{exif.Make.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">设备型号：</text>{{exif.Model.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">软件版本：</text>{{exif.Software.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">修改日期：</text>{{exif.DateTime.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">曝光时间：</text>{{exif.ExposureTime.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">ISO：</text>{{exif.ISOSpeedRatings.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">原始日期：</text>{{exif.DateTimeOriginal.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">快门速度：</text>{{exif.ShutterSpeedValue.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">光圈大小：</text>{{exif.ApertureValue.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">亮度值：</text>{{exif.BrightnessValue.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">焦距：</text>{{exif.FocalLength.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">白平衡：</text>{{exif.WhiteBalance.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">镜头生产商：</text>{{exif.LensMake.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">镜头型号：</text>{{exif.LensModel.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">GPS/纬度：</text>{{exif.GPSLatitude.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">GPS/经度：</text>{{exif.GPSLongitude.description||'-'}}</view>
+                <view>
+                    <text style="font-weight: 500;">海拔高度：</text>{{exif.GPSAltitude.description||'-'}}</view>
+            </view>
+        </view>
+        <canvas bindtouchstart="handlePreviewOriginImage" canvasId="myCanvas" style="width: {{width}}px; height: {{height}}px"></canvas>
+        <view class="compress-text" wx:if="{{compressing&&!compressedSrc}}">压缩中...</view>
+        <view class="compress-text" wx:if="{{compressedSrc}}">
+      压缩后图片大小是：<text class="highlight">{{compressedSize}}</text> KB</view>
+        <view style="font-size: 14px; color: #bbb" wx:if="{{compressedSize>targetSize}}">💡已经达到压缩极限，不能更糊了</view>
+        <image bindtap="handlePreviewCompressImage" class="compressed-image" src="{{compressedSrc}}" style="width: {{width}}px; height: {{height}}px; margin-top: 10px;" wx:if="{{compressedSrc}}"></image>
+        <view class="save-btn-wrap">
+            <button bindtap="saveCompressedImage" class="save-btn" wx:if="{{compressedSrc&&!isShowSetting}}">保存压缩图片</button>
+            <button bindtap="openSetting" class="save-btn" wx:if="{{isShowSetting}}">打开权限设置</button>
+        </view>
+    </view>
+</view>
+
+<view  style="margin-bottom: auto;" wx:if="{{appConfig.ad.wxcustomA}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustomA}}" ></ad-custom>
+    </view>

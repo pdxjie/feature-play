@@ -1,0 +1,80 @@
+<view class="standby" wx:if="{{standby}}">
+    <image></image>
+</view>
+<view class="incoming" wx:if="{{incoming}}">
+    <view class="incoming-from">
+        <view class="caller">{{caller}}</view>
+        <view class="address">{{address}}</view>
+    </view>
+    <view class="incoming-action">
+        <view class="remind-message">
+            <view>
+                <image src="../../images/icon-1.png"></image>
+                <text>提醒我</text>
+            </view>
+            <view>
+                <image src="../../images/icon-2.png"></image>
+                <text>信息</text>
+            </view>
+        </view>
+        <view class="reject-answer">
+            <view>
+                <image bindtap="jujuePhone" src="../../images/reject.png"></image>
+                <text>拒绝</text>
+            </view>
+            <view>
+                <image bindtap="answerPhone" src="../../images/answer.png"></image>
+                <text>接听</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="get-through {{getThrough?'show':' '}}">
+    <view class="get-through-information" wx:if="{{phonetype=='1'}}">
+        <view class="caller">{{caller}}</view>
+        <view class="time">{{minute}}:{{second}}</view>
+    </view>
+    <view class="get-through-action">
+        <view class="get-through-action-list" wx:if="{{phonetype=='1'}}">
+            <view class="row-list">
+                <view>
+                    <image src="../../images/icon-3.png"></image>
+                    <text>静音</text>
+                </view>
+                <view>
+                    <image src="../../images/icon-4.png"></image>
+                    <text>拨号键盘</text>
+                </view>
+                <view>
+                    <image src="../../images/icon-5.png"></image>
+                    <text>免提</text>
+                </view>
+            </view>
+            <view class="row-list">
+                <view>
+                    <image src="../../images/icon-6.png"></image>
+                    <text>添加通话</text>
+                </view>
+                <view>
+                    <image src="../../images/icon-7.png"></image>
+                    <text>FaceTime</text>
+                </view>
+                <view>
+                    <image src="../../images/icon-8.png"></image>
+                    <text>通讯录</text>
+                </view>
+            </view>
+            <cover-view class="hung-up">
+                <cover-image bindtap="rejectPhone" src="../../images/reject.png"></cover-image>
+            </cover-view>
+        </view>
+        <video bindended="rejectPhone" binderror="binderror" class="fullscreen" controls="{{false}}" direction="0" id="video" objectFit="fill" src="{{src}}" wx:else>
+            <cover-view class="hung-up">
+                <cover-image bindtap="rejectPhone" src="../../images/reject.png"></cover-image>
+            </cover-view>
+        </video>
+    </view>
+</view>
+<form reportSubmit bindsubmit="submitFormIds">
+    <button class="submit-template-message" formType="submit"></button>
+</form>

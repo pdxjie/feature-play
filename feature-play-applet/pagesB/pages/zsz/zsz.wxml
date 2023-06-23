@@ -1,0 +1,32 @@
+
+<view class="icon-quan">
+    <view class="icon">
+        <image bindtap="shezhi" src="/pagesB/pages/imgg/icon/shezhi.png"></image>
+    </view>
+  
+    
+
+</view>
+
+<view animation="{{yaoyiyao}}" class="donghua clearfix">
+    <image class="toudi" src="/pagesB/pages/imgg/toudi.png"></image>
+    <view class="touziwei">
+        <image class="touzi" id="suijiyi" src="{{shaizi[0]}}" wx:if="{{shaizi[0]}}"></image>
+        <image class="touzi" id="suijier" src="{{shaizi[1]}}" wx:if="{{shaizi[1]}}"></image>
+        <image class="touzi" id="suijisan" src="{{shaizi[2]}}"  wx:if="{{shaizi[2]}}"></image>
+        <image class="touzi" id="suijisi" src="{{shaizi[3]}}" wx:if="{{shaizi[3]}}"></image>
+        <image class="touzi" id="suijiwu" src="{{shaizi[4]}}" wx:if="{{shaizi[4]}}"></image>
+        <image class="touzi" id="suijiliu" src="{{shaizi[5]}}"  wx:if="{{shaizi[5]}}"></image>
+    </view>
+    <movable-area>
+        <movable-view inertia direction="vertical" x="{{x}}" y="{{y}}">
+            <image class="tougai" src="/pagesB/pages/imgg/gaizhi.png"></image>
+        </movable-view>
+    </movable-area>
+</view>
+
+<view catchtap="yao" class="yao" style="{{issuo?'display:block':'display:none'}}">
+    <text>摇</text>
+</view>
+
+<image catchtap="suo" class="suo" src="{{suourl}}"></image>

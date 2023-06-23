@@ -1,0 +1,14 @@
+.body {
+  width: 750rpx;
+}
+.base-image{
+  text-align: center;
+}
+.base-image image {
+  width: 70%;
+  height: 400rpx;
+}
+.desc {
+  padding: 10rpx;
+  text-indent: 2em;
+}

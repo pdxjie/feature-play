@@ -1,0 +1,29 @@
+.input-box {
+    width: 750rpx;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    width: 65rpx;
+    margin: 0 30rpx;
+    height: 100rpx;
+}
+
+.input {
+    height: 100%;
+    font-size: 30rpx;
+    placeholder-color: grey;
+    border-radius: 15rpx;
+}
+
+.input-delete {
+    width: 65rpx;
+    margin: 0 30rpx;
+    height: 100rpx;
+}
+
+.input-delete:active {
+    opacity: .5;
+}

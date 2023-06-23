@@ -1,0 +1,28 @@
+.time {
+    width: 100%;
+    margin: 0 0 80px;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 900;
+    padding: 30px 0;
+    background: #ff4444;
+}
+
+.time text {
+    color: #fff;
+}
+
+
+
+
+.button_compress {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: #ff4444;
+  color: #fff;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

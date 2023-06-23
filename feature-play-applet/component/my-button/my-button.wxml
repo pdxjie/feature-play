@@ -1,0 +1,7 @@
+<view class="all">
+    <button bindlongtap="btnLongpress" bindtap="btnClick" class="button-box {{showIcon=='true'?'space-between':'center'}}" openType="{{openType}}" style="{{buttonStyle}}">
+        <image class="button-icon" mode="aspectFit" src="{{iconSrc}}" wx:if="{{showIcon=='true'}}"></image>
+        <text>{{text}}</text>
+        <view class="button-blank" wx:if="{{showIcon=='true'}}"></view>
+    </button>
+</view>

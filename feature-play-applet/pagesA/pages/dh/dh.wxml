@@ -1,0 +1,595 @@
+<view class="navigation">
+    <scroll-view class="nav-scroll" scrollLeft="{{scrollLeft}}" scrollWithAnimation="true" scrollX="true">
+        <view bindtap="bindtap" class="nav-item nav-item-{{index}} {{index==selectedTitle?'active':''}}" id="{{index}}" wx:for="{{navigation}}">
+      {{item}}
+      </view>
+    </scroll-view>
+</view>
+<swiper bindchange="bindChange" current="{{selectedTitle}}" duration="300" style="height:{{swiperHeight}}rpx">
+    <swiper-item id="current0">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+           
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="110">报警电话<span>110</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="119">火警电话<span>119</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="120">急救电话<span>120</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="122">交通事故电话<span>122</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12119">森林火警电话<span>12119</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12395">水上救援电话<span>12395</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="999">红十字会急救电话<span>999</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12308">国外任意地点寻求领事馆协助<span>12308</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12110">公安短信报警<span>12110</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12117">报时服务电话<span>12117</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="114">查询电话号码<span>114</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current1">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="12315">消费维权投诉电话<span>12315</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12358">物价举报投诉电话<span>12358</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12365">技术监督局质量投诉<span>12365</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12310">机构编制违规举报<span>12310</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12369">环保局监督电话<span>12369</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="96300">国家烟草局投诉电话<span>96300</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12319">城建服务热线电话<span>12319</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12300">电信投诉<span>12300</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12318">全国文化市场举报<span>12318</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12388">全国纪检监察举报<span>12388</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12320">公共卫生环境投诉<span>12320</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="96102">偷税漏税举报热线<span>96102</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12366">地税纳税服务热线<span>12366</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12333">劳动和社会保障局<span>12333</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95598">供电抢修服务电话<span>95598</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12345">政府公益服务接入网<span>12345</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="12338">妇女维权热线<span>12338</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current2">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                      <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                <p bindtap="phoneCall" data-reply-phone="010-65551114">文化部<span>010-65551114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-58934114">建设部<span>010-58934114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-58160600">民政部<span>010-58160600</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-65961114">外交部<span>010-65961114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-66096114">教育部<span>010-66096114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-84201114">劳动部<span>010-84201114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-63202114">水利部<span>010-63202114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-68551114">财政部<span>010-68551114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-64193366">农业部<span>010-64193366</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-65292114">交通部<span>010-65292114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-65194114">海关总署<span>010-65194114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-84025890">红十字会<span>010-84025890</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-66083260">中华慈善总会<span>010-66083260</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="021-52504617">壹基金<span>021-52504617</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-82872688">中国扶贫基金会<span>010-82872688</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-64035547">中国青少年发展基金会<span>010-64035547</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current3">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="95338">顺丰速运<span>95338</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95543">申通快递<span>95543</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95546">韵达快递<span>95546</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95554">圆通速递<span>95554</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95311">中通速递<span>95311</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="11183">EMS快递<span>11183</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4001888888">天天快递<span>4001-888-888</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4006789000">宅急送<span>400-6789-000</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95353">德邦<span>95353</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95320">百世快递<span>95320</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="11183">邮政包裹/挂号信<span>11183</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current4">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="95566">中国银行<span>95566</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95588">工商银行<span>95588</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95533">建设银行<span>95533</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95599">农业银行<span>95599</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95555">招商银行<span>95555</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95559">交通银行<span>95559</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95595">光大银行<span>95595</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95580">邮政储蓄<span>95580</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95568">民生银行<span>95568</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95561">兴业银行<span>95561</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95558">中信银行<span>95558</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95577">华夏银行<span>95577</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95516">中国银联<span>95516</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95508">广东发展银行<span>95508</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95501">深圳发展银行<span>95501</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95528">上海浦东发展银行<span>95528</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008302880">汇丰银行<span>800-830-2880</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008301880">花旗银行<span>800-830-1880</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008303811">东亚银行<span>800-830-3811</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="021-962888">上海银行<span>021-962888</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="010-96169">北京银行<span>010-96169</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current5">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="95519">中国人寿保险<span>95519</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95500">太平洋保险<span>95500</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95511">平安保险<span>95511</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95589">太平人寿保险<span>95589</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95518">中国人保保险<span>95518</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95505">天安保险<span>95505</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95507">大众保险<span>95507</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95509">华泰财险<span>95509</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95585">中华联合保险<span>95585</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95556">华安财险<span>95556</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95590">中国大地保险<span>95590</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95569">安邦财险<span>95569</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95522">泰康人寿保险<span>95522</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95567">新华人寿保险<span>95567</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current6">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="01062752114">北京大学<span>010-62752114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="01062782165	">清华大学<span>010-62782165	</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="057185172244">浙江大学<span>0571-85172244</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02165642222">复旦大学<span>021-65642222</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02583593186">南京大学<span>025-83593186</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02134206500	">上海交通大学<span>021-34206500	</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02768755114">武汉大学<span>027-68755114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="01062511601">中国人民大学<span>010-62511601</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02787541114">华中科技大学<span>027-87541114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02084113480">中山大学<span>020-84113480</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="043185166420">吉林大学<span>0431-85166420</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02885406437">四川大学<span>028-85406437</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="01058800260">北京师范大学<span>010-58800260</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02223508219">南开大学<span>022-23508219</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="073188876834">中南大学<span>0731-88876834</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="053188564774">山东大学<span>0531-88564774</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="01062896811">中国农业大学<span>010-62896811</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="05513601000">中国科技大学<span>0551-3601000</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02982668888">西安交通大学<span>029-82668888</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="05922186110">厦门大学<span>0592-2186110</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02227403536">天津大学<span>022-27403536</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02162233333">华东师范大学<span>021-62233333</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02165982200">同济大学<span>021-65982200</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02087110000">华南理工大学<span>020-87110000</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="09318911114">兰州大学<span>0931-8911114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02483679262">东北大学<span>024-83679262</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="85228592111">香港大学<span>852-28592111</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="02085220114">暨南大学<span>020-85220114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="045186414060">哈尔滨工业大学<span>0451-86414060</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="01082317114">北京航空航天大学<span>010-82317114</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current7">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="4008308300">华为<span>400-830-8300</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008108888">联想<span>800-810-8888</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008101992">方正<span>800-810-1992</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008100285">长城<span>800-810-0285</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008209000">索尼<span>800-820-9000</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008100781">松下<span>800-810-0781</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008109977">爱普生<span>800-810-9977</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008108208">东芝<span>800-810-8208</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008289383">富士通<span>800-828-9383</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4006272273">苹果售后<span>400-627-2273</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4008105858">三星<span>400-810-5858</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4008365365">苏宁电器<span>400-836-5365</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008102828">IBM<span>800-810-2828</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008202255">惠普<span>800-820-2255</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008580888">戴尔<span>800-858-0888</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008201201">飞利浦<span>800-820-1201</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8009906600">国美电器<span>800-990-6600</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4006999999">海尔<span>400-699-9999</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4008111666">长虹<span>400-811-1666</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008571616">老板<span>800-857-1616</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="8008576717">苏泊尔<span>800-857-6717</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="4008365315">格力<span>400-836-5315</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current8">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="10000">中国电信<span>10000</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="10086">中国移动<span>10086</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="10010">中国联通<span>10010</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="10050">中国铁通<span>10050</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="17900">中国电信IP号码<span>17900</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="17951">中国移动IP号码<span>17951</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="10086999">中国垃圾短信投诉号码<span>10086999</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="114">电话号码查询<span>114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="118114">电信查号台<span>118114</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="116114">联通查号台<span>116114</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item id="current9">
+        <scroll-view scrollY="true" style="height: 100%;">
+            <view class="container">
+                <p>
+                          <view  wx:if="{{appConfig.ad.wxcustom}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustom}}" ></ad-custom>
+    </view>
+                </p>
+                <p bindtap="phoneCall" data-reply-phone="95583">国航<span>95583</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95339">海航<span>95339</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95539">南航<span>95539</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95530">东航<span>95530</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95080">深航<span>95080</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95557">厦航<span>95557</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95369">山航<span>95369</span>
+                </p>
+                <view class="hr0"></view>
+                <p bindtap="phoneCall" data-reply-phone="95378">川航<span>95378</span>
+                </p>
+                <view class="hr0"></view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+</swiper>

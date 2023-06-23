@@ -1,0 +1,77 @@
+.container,camera,page {
+    height: 100%;
+}
+
+camera {
+    z-index: 1;
+}
+
+#can,#can2 {
+    background-color: transparent;
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#can2 {
+    z-index: 50;
+}
+
+.co {
+    background-color: transparent;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    
+    align-items: center;
+    bottom: -40rpx;
+    right: 40rpx;
+    transform: rotate(90deg);
+    transform-origin: right top;
+    width: 150rpx;
+    height: 80rpx;
+}
+
+.showWrap {
+    right: 140rpx;
+}
+
+.takeWrap {
+    right: 240rpx;
+}
+
+.co1 {
+    background-color: transparent;
+    transform: rotate(90deg) translateX(150rpx);
+    position: fixed;
+    z-index: 999;
+    top: 40rpx;
+    right: 40rpx;
+    display: flex;
+align-items: center;
+    transform-origin: right top;
+}
+
+.co1,button {
+    width: 150rpx;
+    height: 80rpx;
+}
+
+button {
+    font-size: 30rpx;
+    line-height: 80rpx;
+    z-index: 199;
+    background: #5cb85c;
+    color: #fff;
+}
+
+.chi {
+    background-color: #5bc0de;
+}
+
+.ph {
+    background-color: #f0ad4e;
+}

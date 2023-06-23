@@ -1,0 +1,596 @@
+.icon-quan {
+	position: absolute;
+	width: 100%;
+	margin-top: 4%;
+	z-index: 5;
+}
+
+.icon,.icon-quan {
+	height: 40px;
+	float: left;
+}
+
+.icon {
+	width: 40px;
+	margin-left: 5%;
+}
+
+.icon image {
+	width: 100%;
+	height: 100%;
+}
+
+.yaoqingma {
+	height: 800rpx;
+	margin-top: 35%;
+	z-index: 2;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 25rpx;
+}
+
+.erweima,.yaoqingma {
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+.erweima {
+	height: 430rpx;
+	margin-top: 5%;
+}
+
+.erweima image {
+	width: 100%;
+	height: 100%;
+}
+
+.mabiaoti {
+	font-size: 36rpx;
+	font-weight: 700;
+	line-height: 50rpx;
+}
+
+.mabiaoti,.mashuoming {
+	width: 100%;
+	height: 50rpx;
+	float: left;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.mashuoming {
+	color: rgba(0,0,0,.5);
+}
+
+.daohang {
+	margin-left: 20rpx;
+}
+
+.daohang,.gengduo {
+	width: 200rpx;
+	height: 55rpx;
+	margin-top: 2.5rem;
+	float: left;
+	border-radius: 30rpx;
+	background-color: rgba(0,0,0,.2);
+	border: 1px solid #aaa;
+	color: #fff;
+	line-height: 55rpx;
+	z-index: 1;
+	position: absolute;
+}
+
+.gengduo {
+	margin-left: 280rpx;
+	text-align: center;
+	font-weight: 700;
+}
+
+.ge {
+	position: absolute;
+	z-index: 2;
+	border-right: solid 1px#666666;
+}
+
+.ge,.ge1 {
+	width: 98rpx;
+	height: 40rpx;
+	float: left;
+	text-align: center;
+	margin-top: 7.5rpx;
+	line-height: 40rpx;
+}
+
+.ge1 {
+	margin-left: 98rpx;
+	z-index: 1;
+}
+
+.ge1 button {
+	width: 100rpx;
+	height: 40rpx;
+	line-height: 40rpx;
+	font-size: 1rem;
+	color: #fff;
+	background: none;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.guan {
+	width: 50rpx;
+	height: 50rpx;
+	border: 1px solid #999;
+	text-align: center;
+	color: #999;
+	line-height: 50rpx;
+	margin-left: 85%;
+	margin-top: 5%;
+	top: 10%;
+	border-radius: 10rpx;
+}
+
+.tj-container {
+	display: flex;
+	flex-direction: row;
+	height: 200rpx;
+	background-color: #fff;
+	align-items: center;
+	position: relative;
+}
+
+.tj-bg {
+	width: 100%;
+	height: 100%;
+}
+
+.tianjia {
+	width: 300rpx;
+	height: 100rpx;
+	top: 25rpx;
+	right: 80rpx;
+	z-index: 100;
+	position: absolute;
+	background-repeat: round;
+	opacity: .9;
+	filter: alpha(opacity=90);
+	background-image: url("http://touzi.115xy.com/tj.png");
+}
+
+.tianjia image {
+	width: 100%;
+}
+
+.tjwz {
+	margin-top: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
+	height: 80%;
+	font-size: 23rpx;
+	line-height: 1.2rem;
+}
+
+.tjgb,.tjwz {
+	position: absolute;
+}
+
+.tjgb {
+	width: 25rpx;
+	height: 25rpx;
+	color: #fff;
+	top: 40rpx;
+	right: 10rpx;
+	font-size: 18rpx;
+	background-color: #999;
+	text-align: center;
+	line-height: 25rpx;
+	border-radius: 12rpx 12rpx 12rpx 12rpx;
+	z-index: 101;
+}
+
+.gameplay {
+	position: absolute;
+	width: 50rpx;
+	height: 70rpx;
+	top: 200rpx;
+	left: 50rpx;
+	z-index: 200;
+}
+.donghua,.gameplay image {
+	width: 100%;
+	height: 100%;
+}
+
+.donghua,.ggad {
+	position: absolute;
+}
+
+.ggad {
+	width: 100rpx;
+	height: 100rpx;
+	top: 3%;
+	left: 5%;
+}
+
+.ggad image {
+	max-width: 100%;
+	max-height: 100%;
+	float: left;
+}
+
+.gg {
+	width: 90%;
+	margin-left: 5%;
+	height: auto;
+	position: absolute;
+	bottom: 45rpx;
+}
+
+.isIPX {
+	padding-bottom: 40pt!important;
+}
+
+isIphoneX {
+	bottom: 40pt;
+}
+
+.shezhi1 {
+	width: 180rpx;
+	height: 60rpx;
+	background-color: #e02a2a;
+	border-radius: 40rpx;
+	bottom: 330rpx;
+	margin-left: 8%;
+	line-height: 60rpx;
+	font-size: 32rpx;
+}
+
+.fenge,.shezhi1 {
+	float: left;
+	position: absolute;
+	color: #fff;
+	text-align: center;
+}
+
+.fenge {
+	width: 100%;
+	height: 40pt;
+	bottom: 265rpx;
+	border: 1px solid #546288;
+}
+
+#gengduo {
+	width: 100rpx;
+	height: 100rpx;
+	top: 3%;
+}
+
+#gengduo,#shezhi {
+	position: absolute;
+	left: 5%;
+}
+
+#shezhi {
+	width: 60rpx;
+	height: 60rpx;
+	top: 12%;
+}
+
+.suo {
+	margin-left: 3%;
+}
+
+.suo,.yao {
+	width: 120rpx;
+	height: 120rpx;
+	float: left;
+	position: absolute;
+	top: 50%;
+}
+
+.yao {
+	margin-left: 82%;
+	bottom: 0rpx;
+	font-size: 70rpx;
+	background-color: #aaa;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 60rpx;
+	text-align: center;
+	line-height: 120rpx;
+	color: #fff;
+	font-weight: 700;
+}
+
+.toudi {
+	width: 70%;
+	height: 300rpx;
+	position: absolute;
+	bottom: 24%;
+	left: 15%;
+}
+
+movable-view {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 680rpx;
+	width: 100%;
+	color: #fff;
+}
+
+movable-area {
+	width: 70%;
+	height: 90%;
+	position: absolute;
+	float: left;
+	margin-left: 15%;
+	bottom: 27%;
+	overflow: hidden;
+}
+
+.tougai {
+	width: 100%;
+	height: 600rpx;
+	float: left;
+}
+
+.touziwei {
+	width: 70%;
+	height: 280rpx;
+	bottom: 27%;
+	left: 12%;
+}
+
+.touzi,.touziwei {
+	position: absolute;
+}
+
+.touzi {
+	width: 110rpx;
+	height: 110rpx;
+}
+
+#suijiyi {
+	top: 28rpx;
+	left: 165rpx;
+}
+
+#suijier {
+	top: 36rpx;
+	left: 310rpx;
+}
+
+#suijisan {
+	top: 58rpx;
+	left: 98rpx;
+}
+
+#suijisi {
+	top: 95rpx;
+	left: 195rpx;
+}
+
+#suijiwu {
+	top: 77rpx;
+	left: 365rpx;
+}
+
+#suijiliu {
+	top: 106rpx;
+	left: 293rpx;
+}
+
+.kaiping {
+	z-index: 800;
+}
+
+.kaiping,.shipin {
+	width: 100%;
+	height: 100%;
+	padding: 0rpx;
+	position: absolute;
+}
+
+.shipin {
+	z-index: 888;
+}
+
+.guanbi {
+	width: 60rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+	text-align: center;
+	float: right;
+	top: 230rpx;
+	right: 11%;
+	font-size: 48rpx;
+	border: 1px solid #eceaeb;
+	color: #fff;
+	background-color: #b60924;
+	font-weight: 700;
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+	position: fixed;
+	border-radius: 15rpx 15rpx 15rpx 15rpx;
+}
+
+.huode {
+	left: 5%;
+	border-radius: 36rpx;
+	background-color: #32aee1;
+}
+
+.huode,.shiyong {
+	width: 245rpx;
+	height: 80rpx;
+	float: left;
+	top: 550rpx;
+	font-size: 36rpx;
+	text-align: center;
+	line-height: 80rpx;
+	color: #fff;
+	position: absolute;
+}
+
+.shiyong {
+	left: 50%;
+	border-radius: 45rpx;
+	background-color: #fbcd05;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.yaoqing {
+	width: 60rpx;
+	height: 60rpx;
+	float: left;
+	position: absolute;
+	z-index: 99;
+	margin-left: 5%;
+	margin-top: 15%;
+	padding: 0;
+	border-radius: 0;
+	border: 0rpx;
+	background: none!important;
+	color: #000!important;
+}
+
+.yaoqing::after {
+	border: none;
+}
+
+.help {
+	z-index: 999;
+	padding: 0;
+	background: none!important;
+	color: #000!important;
+}
+
+.help,.moli {
+	width: 100rpx;
+	height: 100rpx;
+	float: left;
+	position: absolute;
+	margin-left: 30%;
+	margin-top: 5%;
+}
+
+.moli {
+	z-index: 99;
+}
+
+.ico-moli {
+	width: 100%;
+	height: 100%;
+}
+
+.ck-moli {
+	width: 80%;
+	height: auto;
+	top: 200rpx;
+	margin-left: 12%;
+	position: absolute;
+	z-index: 100;
+}
+
+.bj-moli {
+	max-width: 100%;
+}
+
+button::after {
+	border: none;
+}
+
+.btnImg {
+	margin-right: 8rpx;
+	width: 100%;
+	height: 100%;
+}
+
+#tuyi {
+	top: 40rpx;
+	left: 6%;
+}
+
+#tuer,#tuyi {
+	position: absolute;
+	width: 120rpx;
+	height: 120rpx;
+}
+
+#tuer {
+	top: 32%;
+	left: 3%;
+}
+
+.userinfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.userinfo-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	margin: 20rpx;
+	border-radius: 50%;
+}
+
+.userinfo-nickname {
+	color: #aaa;
+}
+
+.fix-iphonex-button {
+	bottom: 55rpx!important;
+}
+
+.fix-iphonex-button::after {
+	content: "";
+	position: fixed;
+	bottom: 0!important;
+	height: 55rpx!important;
+	width: 100%;
+}
+
+.swiper {
+	z-index: 10;
+}
+
+.slide-image,.swiper {
+	position: absolute;
+	width: 120rpx;
+	height: 120rpx;
+}
+
+.slide-image {
+	float: left;
+	border-radius: 30px;
+}
+
+.swiper images {
+	position: absolute;
+}
+
+page {
+	height: 100%;
+	background-image: url("http://touzi.115xy.com/tzbj5.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+/*  */
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "尺子",
+  "usingComponents": {
+      "my-button": "/component/my-button/my-button"
+  }
+    
+}

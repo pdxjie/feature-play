@@ -1,0 +1,15 @@
+<view class="page {{isIPX}}">
+    <view class="top-bar fixed">
+        <page-title></page-title>
+    </view>
+    <image bindtap="inSeeImg" class="top-img" mode="aspectFill" src="{{imgsrc}}" style="height:{{sys.screenHeight*2}}rpx"></image>
+    <view class="flex-bar bom-bar fixed">
+        
+        <view bindtap="inDowmImg" class="butssss">
+            <text class="iconfont icon-down"></text>
+            <view>保存</view>
+        </view>
+    
+        
+    </view>
+</view>

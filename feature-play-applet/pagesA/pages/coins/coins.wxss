@@ -1,0 +1,168 @@
+.ybtop {
+    margin: 36px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.ybimg {
+    height: 320rpx;
+    margin: 0 auto;
+    width: 320rpx;
+}
+
+.ybthis {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.ybresult {
+    margin: 0 auto;
+}
+
+.ybresult,.ybresult-i {
+    height: 320rpx;
+    width: 320rpx;
+}
+
+.ybresult-i {
+    background-color: #fff;
+}
+
+.ybimg-i {
+    height: 320rpx;
+    position: absolute;
+    width: 320rpx;
+}
+
+.ybimg-f {
+    backface-visibility: hidden;
+}
+
+.ybbton {
+    bottom: 73px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+}
+
+.flipped-horizontal-right-z {
+    transform: rotateY(5turn);
+    transition: 3s ease-out;
+}
+
+.flipped-horizontal-right-f {
+    transform: rotateY(1980deg);
+    transition: 3s ease-out;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.ybresult-text {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.ybresult-text-ret {
+    display: block;
+    font-size: 22px;
+    margin: 5px 0 3px;
+    text-align: center;
+}
+
+.ybresult-text-con {
+    color: #aaa;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ybbton-i {
+    font-size: 16px;
+    position: relative;
+    width: 112px;
+}
+
+.yb-reback {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.yb-reback,.ybfirst {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.ybfirst {
+    position: relative;
+}
+
+.ybfirst-text {
+    display: block;
+    font-size: 22px;
+    margin: 5px 0 0;
+    text-align: center;
+}
+
+.ybinput {
+    display: block;
+    width: 100%;
+}
+
+.ybinput-i {
+    display: block;
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.ybfirst-con {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.ybquestion {
+    display: block;
+    margin: 5px 0 4px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.ybquestion-text {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.ybshares {
+    margin-top: 12px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.shareimg-i,.shareimg-share-button {
+    display: inline-block;
+    height: 20px;
+    margin: 0 10px;
+    width: 20px;
+}
+
+.shareimg-share-button {
+    line-height: 0px;
+    padding: 0!important;
+}
+
+.shareimg-share-button .shareimg-i {
+    margin: 0;
+}
+
+button.shareimg-share-button[plain] {
+    border: none;
+}

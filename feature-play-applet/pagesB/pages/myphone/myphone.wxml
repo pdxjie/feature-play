@@ -1,0 +1,36 @@
+<view bindtap="fuzhi">
+    <view>
+        <view class="yuan sorts">
+            <view>品牌：</view>
+            <view class="texts">{{mybrand}}</view>
+        </view>
+        <view class="yuan">
+            <view>型号：</view>
+            <view class="texts">{{mymodel}}</view>
+        </view>
+        <view class="yuan">
+            <view>系统：</view>
+            <view class="texts">{{mysystem}}</view>
+        </view>
+        <view class="yuan">
+            <view>语言</view>
+            <view class="texts">{{mylanguage}}</view>
+        </view>
+        <view class="yuan">
+            <view>屏幕：</view>
+            <view class="texts">{{myscreen}}</view>
+        </view>
+        <view class="yuan">
+            <view>网络</view>
+            <view class="texts">{{mywifi}}</view>
+        </view>
+        <view class="yuan">
+            <view>像素比</view>
+            <view class="texts">{{mypixelRatio}}</view>
+        </view>
+        <view class="yuan sortss">
+            <view>微信版本</view>
+            <view class="texts">{{myversion}}</view>
+        </view>
+    </view>
+</view>

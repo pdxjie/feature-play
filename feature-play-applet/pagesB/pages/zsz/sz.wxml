@@ -1,0 +1,17 @@
+<view class="touziwei">
+    <view class="biaoti">
+        <view bindtap="queding" class="hui">
+            <image src="../imgg/fanhui.png"></image>
+        </view>
+        <view class="tit">骰子个数</view>
+    </view>
+    <view class="shuliang">
+        <view catchtap="jian" class="jian">
+            <image class="anniu " src="/pagesB/pages/imgg/jian.png"></image>
+        </view>
+        <view class="wenzi">{{touzigeshu}}</view>
+        <view catchtap="jia">
+            <image class="anniu" src="/pagesB/pages/imgg/jia.png"></image>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,33 @@
+page {
+  background-color: #ededed;
+}
+
+.dian_btn {
+  width: 95%;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-size: 30rpx;
+  width: 90%;
+  margin: 10rpx 0;
+  color: #ffffff;
+}
+
+.btn::after {
+  border: none;
+}
+
+.cell {
+  background-color: #e24646;
+
+}
+
+.share {
+  background-color: #49ce49;
+}

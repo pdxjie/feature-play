@@ -1,0 +1,14 @@
+.opera {
+  display: flex;
+  width: 750rpx;
+}
+.opera input {
+  width: 100%;
+  border-bottom: 1px solid #EEE;
+}
+.content textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  padding-top: 5px;
+}

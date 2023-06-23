@@ -1,0 +1,54 @@
+.text-panel-box {
+    width: 720rpx;
+    margin: 36rpx 15rpx;
+    flex-direction: column;
+    border-radius: 10rpx;
+    border: 1px solid #383838;
+}
+
+.text-panel-box,.title {
+    display: flex;
+}
+
+.title {
+    height: 80rpx;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30rpx;
+    padding-right: 20rpx;
+    border-bottom: 1rpx solid #383838;
+}
+
+.title>text {
+    color: #383838;
+    font-size: 30rpx;
+}
+
+.icon-copy-box,.icon-custom-box {
+    width: 60rpx;
+    height: 80rpx;
+    display: inline-block;
+    line-height: 80rpx;
+}
+
+.icon-copy,.icon-custom {
+    width: 40rpx;
+    height: 80rpx;
+}
+
+.icon-copy:active,.icon-custom:active {
+    opacity: .5;
+}
+
+.content {
+    width: 700rpx;
+    padding: 10rpx;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.content>text {
+    color: #383838;
+    font-size: 30rpx;
+}

@@ -1,0 +1,17 @@
+<view class="all">
+    <view class="masker {{isGoingClose?'closeMasker':''}}" wx:if="{{isShowModal}}"></view>
+    <view class="modal-box" wx:if="{{isShowModal}}">
+        <view class="modal {{isGoingClose?'closeModal':''}}">
+            <view class="title">
+                <view class="blank"></view>
+                <text>{{title}}</text>
+                <image bindtap="closeModal" class="close" mode="aspectFit" src="/images/common/close.png"></image>
+            </view>
+            <view class="content">
+                <view bindtap="chooseColor" class="list" data-idx="{{index}}" style="background-color:{{!!item.bgcolor?item.bgcolor:'#000000'}};" wx:for="{{colorList}}" wx:key="index">
+                    <text style="color:{{!!item.color?item.color:'#ffffff'}};">{{item.title}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

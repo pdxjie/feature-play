@@ -1,0 +1,177 @@
+page {
+	background-image: url("http://touzi.115xy.com/shezhibj.png");
+	background-size: 100% 100%;
+	background-repeat: repeat;
+}
+
+.ad,.touziwei {
+	width: 100%;
+	float: left;
+}
+
+.touziwei {
+	height: 300rpx;
+	margin-top: 15rpx;
+}
+
+.shu {
+	border: 1px solid #000;
+	border-radius: 40rpx;
+}
+
+.shu,.xuanzhong {
+	width: 20%;
+	height: 65rpx;
+	line-height: 65rpx;
+	text-align: center;
+	margin-top: 30rpx;
+	float: left;
+	margin-left: 10%;
+}
+
+.xuanzhong {
+	border: 1px solid #fdd654;
+	border-radius: 40rpx;
+	background-color: #000;
+	color: #000;
+	font-weight: 700;
+}
+
+.shuliang {
+	width: 100%;
+	height: 120rpx;
+	margin-top: 20rpx;
+	float: left;
+}
+
+.wenzi {
+	width: 30%;
+	height: 105rpx;
+	line-height: 105rpx;
+	border: 1px solid #aaa;
+	background-color: rgba(0,0,0,.2);
+	color: #fff;
+	float: left;
+	border-radius: 60rpx;
+	z-index: -1;
+	text-align: center;
+	font-size: 36px;
+}
+
+.anniu {
+	width: 120rpx;
+	height: 120rpx;
+	z-index: 3;
+	float: left;
+}
+
+.anniu:active {
+	opacity: .6;
+}
+
+.jian {
+	width: 120rpx;
+	float: left;
+	margin-left: 20%;
+}
+
+.geshu,.jian {
+	height: 120rpx;
+}
+
+.geshu {
+	width: 600rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 5rpx;
+}
+
+.biaoti {
+	width: 100%;
+	height: 80rpx;
+	margin-top: 5pt;
+}
+
+.tit {
+	width: 40%;
+	height: 80rpx;
+	line-height: 80rpx;
+	float: left;
+	font-size: 36rpx;
+	margin-left: 15%;
+	font-size: 24px;
+	color: #fff;
+}
+
+.queding,.tit {
+	text-align: center;
+}
+
+.queding {
+	width: 20%;
+	height: 60rpx;
+	line-height: 60rpx;
+	margin-top: 10rpx;
+	margin-right: 5%;
+	float: right;
+	color: #757373;
+	border-radius: 15rpx;
+	border: 1px solid #fdd654;
+	background-color: #fdd654;
+}
+
+.hui {
+	width: 80rpx;
+	height: 80rpx;
+	float: left;
+	margin-top: 5rpx;
+	margin-left: 2%;
+}
+
+.hui image {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.gengduo {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.rmbiaoti {
+	width: 50%;
+	height: 65rpx;
+	line-height: 65rpx;
+	float: float;
+	margin-left: 5%;
+	font-weight: 700;
+}
+
+.meiyigexcx {
+	width: 33%;
+	float: left;
+	margin-top: 5%;
+}
+
+.meiyigetu {
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+	float: left;
+}
+
+.meiyigetu image {
+	width: 100%;
+	height: 100%;
+	border-radius: 30rpx;
+}
+
+.meiyigebiaoti {
+	width: 100%;
+	height: 50rpx;
+	float: left;
+	text-align: center;
+	font-weight: 700;
+}

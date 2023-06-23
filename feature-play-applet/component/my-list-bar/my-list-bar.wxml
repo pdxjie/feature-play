@@ -1,0 +1,14 @@
+<view class="all">
+    <view class="list-bar-box">
+        <view bindtap="clicked" class="list-bar" style="{{listBarStyle}}">
+            <view class="list-bar-left">
+                <image class="list-bar-icon" mode="aspectFit" src="{{iconSrc}}" wx:if="{{!!iconSrc}}"></image>
+                <text class="list-bar-title" style="padding-left:{{!iconSrc?'30rpx':'0px'}};">{{title}}</text>
+            </view>
+            <view class="list-bar-right" style="color:{{textColor}};background:{{bgColor}};">
+                <text class="list-bar-detail" style="margin-right: {{showGo!='true'?'30rpx':'0'}}">{{detail}}</text>
+                <image class="list-bar-go" mode="aspectFit" src="/images/common/go.png" wx:if="{{showGo=='true'}}"></image>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+var filters = ({
+    subStrCut: (function(str, len) {
+        return (str.substring(0, len))
+    }),
+    toFix: (function(value, n) {
+        var num = parseFloat(value);
+        return (num.toFixed(n))
+    }),
+});
+module.exports = ({
+    subStrCut: filters.subStrCut,
+    toFix: filters.toFix,
+});

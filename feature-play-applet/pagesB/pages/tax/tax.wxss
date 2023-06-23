@@ -1,0 +1,125 @@
+.all {
+    background-color: silver;
+    height: 100vh;
+}
+
+.all,.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #ff4444;
+    color: #fff;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+.header>view {
+    padding-left: 10px;
+}
+
+.result {
+    font-size: 7vh;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.result,.total {
+    display: flex;
+}
+
+.total {
+    align-items: center;
+    background-color: #ec1616;
+    justify-content: space-around;
+    min-height: 7vh;
+}
+
+.total view {
+    flex: 1;
+    line-height: 7vh;
+    min-height: 7vh;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.small,.total>view {
+    font-size: 12px;
+}
+
+.small {
+    border-left: 4px solid #ff4444;
+}
+
+.bottom {
+    background-color: silver;
+    flex-direction: column;
+}
+
+.bottom,.salary {
+    display: flex;
+}
+
+.salary {
+    align-items: center;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    justify-content: space-between;
+    margin-top: 20px;
+    min-height: 40px;
+    padding-left: 10px;
+}
+
+.salary view {
+    flex: 1;
+}
+
+.gongjijin {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.choicegongjijin {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    line-height: 40px;
+}
+
+.choicegongjijin,.gongjijinbilv {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    padding-left: 10px;
+}
+
+.gongjijinbilv {
+    flex-direction: row;
+    padding-right: 10px;
+}
+
+.detail {
+    align-items: center;
+    border-top: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.s1 {
+    border-top: none;
+}
+
+.tips {
+    background-color: silver;
+    font-size: 12px;
+    padding-left: 10px;
+}

@@ -1,0 +1,14 @@
+<view class="time">
+    <text class="marright">{{hours}} : {{minute}} : {{second}}</text>
+</view>
+<view class="padding flex flex-direction">
+<button bindtap="kaishi" class="button_compress" style="{{k}}" >开始计时</button>
+<button bindtap="tingzhi" class="button_compress">停止计时</button>
+<button bindtap="qingchu" class="button_compress" style="{{q}}">清除时间</button>
+<view >
+    <view  style="margin-bottom: auto;" wx:if="{{appConfig.ad.wxcustomA}}">
+      <ad-custom unit-id="{{appConfig.ad.wxcustomA}}" ></ad-custom>
+    </view>
+    </view>
+</view>
+

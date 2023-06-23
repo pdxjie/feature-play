@@ -1,0 +1,4 @@
+<view class="textarea-box">
+    <textarea autoHeight bindinput="areaInput" class="textarea" cursorSpacing="100" focus="true" id="textarea" maxlength="{{maxlength}}" placeholder="{{placeholder}}" style="height: {{Height}}rpx" value="{{inputValue}}"></textarea>
+    <image bindtap="areaDelete" class="textarea-delete" mode="aspectFit" src="/images/common/delete.png" wx:if="{{showDelete}}"></image>
+</view>

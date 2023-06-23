@@ -1,0 +1,51 @@
+.question {
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  color: #999;
+}
+.new-item {
+  margin: 18rpx 16px;
+}
+.the-new {
+  padding: 10rpx 0;
+}
+.attach {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.van-tag {
+  margin: 10rpx 0;
+  text-align: center;
+}
+.middle {
+  padding-left: 28rpx;
+  font-size: 28rpx;
+  color: #444;
+}
+.bottom {
+  margin-top: 8rpx;
+  display: flex;
+  padding-left: 28rpx;
+}
+.label {
+  width: 150rpx;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 25rpx;
+  background-color: #EEE;
+}
+.label-item text{
+  padding: 0 10rpx;
+  height: 50rpx;
+  width: 400rpx;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 50rpx;
+}
+.sick-item {
+  margin: 10rpx 0;
+  border-top: 1px solid #EEE;
+  border-bottom: 1px solid #EEE;
+}

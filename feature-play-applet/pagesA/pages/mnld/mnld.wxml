@@ -1,0 +1,79 @@
+
+<swiper autoplay="true" circular="true" class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" duration="500" indicatorDots="true" interval="5000">
+    <swiper-item wx:for="{{swiperList}}" wx:key="index">
+        <image mode="aspectFill" src="{{item.url}}" wx:if="{{item.type=='image'}}"></image>
+        <video autoplay loop muted controls="{{false}}" objectFit="cover" showPlayBtn="{{false}}" src="{{item.url}}" wx:if="{{item.type=='video'}}"></video>
+    </swiper-item>
+</swiper>
+<view class="dian_view margin-top">
+    <view class="cu-form-group">
+        <view class="title">来电名称</view>
+        <picker bindchange="PickerChange" range="{{nameList}}" value="{{index}}">
+            <view class="picker">
+                {{index?nameList[index]:'请选择来电名称'}}
+            </view>
+        </picker>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">来电城市</view>
+        <picker bindchange="RegionChange" customItem="{{customItem}}" mode="region" value="{{region}}">
+            <view class="picker">
+                {{region[0]}}，{{region[1]}}
+            </view>
+        </picker>
+    </view>
+    <view class="cu-form-group">
+        <view class="title">来电铃声</view>
+        <picker bindchange="PickerlSChange" range="{{ringList}}" value="{{lsIndex}}">
+            <view class="picker">
+                {{lsIndex?ringList[lsIndex]:'请选择来电铃声'}}
+            </view>
+        </picker>
+    </view>
+    <view class="solids-bottom padding-xs flex align-center">
+        <view class="flex-sub text-center">
+            <view class="padding">模拟一个来电，假装有急事，迅速离场，避免尴尬。</view>
+        </view>
+    </view>
+    <view class="btns">
+        <button class="btn cell" bindtap="preview" >伪装来电</button>
+        <button class="btn share" openType="share">恶搞好友</button>
+       
+    </view>
+
+
+
+
+    <view class="padding">
+        <view class="solids-bottom padding-xs flex align-left">
+            <view class="flex-sub text-left">
+                使用场景：
+            </view>
+        </view>
+        <view class="solids-bottom padding-xs flex align-left">
+            <view class="flex-sub text-left">
+                - 相亲遇到丑男丑女，想找借口离开。
+            </view>
+        </view>
+        <view class="solids-bottom padding-xs flex align-left">
+            <view class="flex-sub text-left">
+                - 参加一个关系很一般的朋友的生日party（生日聚会）。
+            </view>
+        </view>
+        <view class="solids-bottom padding-xs flex align-left">
+            <view class="flex-sub text-left">
+                - 参加一个不重要却很烦人的会议。
+            </view>
+        </view>
+        <view class="solids-bottom padding-xs flex align-left">
+            <view class="flex-sub text-left">
+                - 恶搞男朋友、女朋友、同学、同事（效果特别理想）。
+            </view>
+        </view>
+        <view class="solids-bottom padding-xs flex align-left">
+            <view class="flex-sub text-left">
+                - 女生遇到坏人跟踪（当然这个希望大家都不会遇到）。
+            </view>
+        </view>
+    </view>
+</view>

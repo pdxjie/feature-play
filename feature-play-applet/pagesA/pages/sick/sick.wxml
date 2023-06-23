@@ -1,0 +1,48 @@
+<view>
+  <van-search
+    value="{{ sickVal }}"
+    shape="round"
+    bind:change="onChange"
+    bind:search="onSearch"
+    background="#4fc08d"
+    placeholder="请输入搜索疾病关键词"
+  />
+  <view class="content">
+    <van-panel wx:if="{{searchSicks.length === 0}}" title="🔥最新疾病热点资讯">
+      <van-skeleton title avatar row="25" loading="{{ loadingNew }}">
+        <view class="the-new">
+          <navigator wx:for="{{newAsks}}" wx:key="index" class="new-item" url="/pagesA/pages/sick-detail/sick-detail?href={{item.href}}">
+            <text>{{item.text}}</text>
+            <text class="question">{{item.question}}</text>
+          </navigator>
+        </view>
+      </van-skeleton>
+    </van-panel>
+    <van-panel wx:if="{{searchSicks.length === 0}}" title="🔥最受关注">
+      <van-skeleton title avatar row="25" loading="{{ loading }}">
+        <view class="attach">
+          <navigator wx:for="{{mostWatcheds}}" wx:key="index" url="/pagesA/pages/sick-detail/sick-detail?href={{item.href}}">
+            <van-tag color="#EEE" size="large">
+              <text style="color: #444; padding:0 10rpx;height: 40rpx; line-height: 40rpx">{{item.text}}</text>
+            </van-tag>
+          </navigator>
+        </view>
+      </van-skeleton>
+    </van-panel>
+
+    <view class="searchs">
+      <navigator class="sick-item" wx:for="{{searchSicks}}" wx:key="index" url="/pagesA/pages/sick-detail/sick-detail?href={{item.href}}">
+        <van-panel title="{{item.title}}">
+          <view class="middle">{{item.desc}}</view>
+          <view class="bottom">
+            <view class="label">{{item.label}}</view>
+            <view class="label-item">
+              <text wx:for="{{item.list}}" wx:key="index">{{item}}</text>
+            </view>
+          </view>
+        </van-panel>
+      </navigator>
+    </view>
+    
+  </view>
+</view>

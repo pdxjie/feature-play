@@ -1,0 +1,32 @@
+<view>
+  <van-search
+    value="{{ searchVal }}"
+    shape="round"
+    background="#4fc08d"
+    placeholder="请输入菜名"
+    bind:change="onChange"
+    bind:search="onSearch"
+  />
+  <van-panel wx:if="{{menus.length === 0}}" title="🌶️今日推荐菜谱">
+    <van-skeleton title row="100" loading="{{ loading }}">
+      <view class="menu-recommend">
+          <navigator class="card" wx:for="{{recommends}}" wx:key="index" url="/pagesA/pages/menu-item/menu-item?href={{item.href}}">
+            <image src="{{item.imgUrl}}" mode="widthFix"/>
+            <view class="menu-name">
+              <text>{{item.menuName}}</text>
+            </view>
+          </navigator>
+      </view>
+    </van-skeleton>
+  </van-panel>
+  <van-panel wx:if="{{menus.length !== 0}}" title="🥣搜索结果">
+    <navigator wx:for="{{menus}}" wx:key="index" url="/pagesA/pages/menu-item/menu-item?href={{item.href}}">
+      <van-card
+        desc="{{item.tags}}"
+        title="{{item.title}}"
+        thumb="{{ item.img }}"
+      />
+    </navigator>
+  </van-panel>
+
+</view>

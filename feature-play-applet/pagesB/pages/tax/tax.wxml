@@ -1,0 +1,62 @@
+<view class="all">
+    <view class="header">
+        <view>税后所得</view>
+        <view class="result">{{result}}</view>
+        <view class="total">
+            <view>个税：{{tax}}</view>
+            <view class="small">社保：{{social}}</view>
+            <view class="small">公积金：{{pub}}</view>
+        </view>
+    </view>
+    <view class="bottom">
+        <view>
+            <view class="salary">
+                <view>税前工资</view>
+                <view>
+                    <input bindinput="salarys" data="num" maxlength="6" type="number"></input>
+                </view>
+            </view>
+        </view>
+        <view>
+            <view class="gongjijin s1">
+                <view class="choicegongjijin">
+                    <view>缴纳公积金</view>
+                    <switch bindchange="gongjichange" checked="{{gongji}}"></switch>
+                </view>
+                <view class="gongjijinbilv" hidden="{{!gongji}}">
+                    <view>缴纳比率</view>
+                    <picker bindchange="changenum" mode="selector" range="{{array}}">
+                        <view class="picker">{{array[n]}} <text></text>></view>
+                    </picker>
+                </view>
+            </view>
+            <view class="gongjijin">
+                <view class="choicegongjijin s1">
+                    <view>缴纳社保</view>
+                    <switch bindchange="shebaochange" checked="{{shebao}}"></switch>
+                </view>
+                <view class="detail s1" hidden="{{!shebao}}">
+                    <view>医疗保险</view>
+                    <view>{{yibao}}</view>
+                </view>
+                <view class="detail" hidden="{{!shebao}}">
+                    <view>养老保险</view>
+                    <view>{{yangbao}}</view>
+                </view>
+                <view class="detail" hidden="{{!shebao}}">
+                    <view>失业保险</view>
+                    <view>{{shibao}}</view>
+                </view>
+                <view class="detail" hidden="{{!shebao}}">
+                    <view>工伤保险</view>
+                    <view>0</view>
+                </view>
+                <view class="detail" hidden="{{!shebao}}">
+                    <view>生育保险</view>
+                    <view>0</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="tips">注:由于各地保险政策差异,计算结果仅供参考</view>
+</view>

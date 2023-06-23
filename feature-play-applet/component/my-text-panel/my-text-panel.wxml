@@ -1,0 +1,16 @@
+<view class="text-panel-box">
+    <view class="title">
+        <text>{{title}}</text>
+        <view class="icon-box">
+            <view bindtap="custom" class="icon-custom-box" wx:if="{{!!iconSrc}}">
+                <image class="icon-custom" mode="aspectFit" src="{{iconSrc}}"></image>
+            </view>
+            <view bindtap="copyText" class="icon-copy-box">
+                <image class="icon-copy" mode="aspectFit" src="/images/common/copy.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="content">
+        <text>{{text}}</text>
+    </view>
+</view>

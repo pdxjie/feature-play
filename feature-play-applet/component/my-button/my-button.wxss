@@ -1,0 +1,35 @@
+.button-box {
+    height: 100rpx;
+    border-radius: 10rpx;
+    background-color: #ff4444;
+    margin: 0 auto;
+}
+
+.button-box,.space-between {
+    display: flex;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-blank,.button-icon,.button-icon-blank {
+    width: 40rpx;
+    margin: 20rpx;
+}
+
+.button-box>text {
+    font-size: 30rpx;
+    color: #FFFFFF;
+}
+
+.button-box:active {
+    opacity: .5;
+}
