@@ -28,7 +28,8 @@
 <img src="https://rawcdn.githack.com/pdxjie/feature-play/b9112f1fa0b246567cd6949f433da294f956d8a2/asset/me.png" style="width:250px;height:500px;">
 </div>
 <h3>小程序预览：</h3>
-<img src="https://rawcdn.githack.com/pdxjie/feature-play/b9112f1fa0b246567cd6949f433da294f956d8a2/asset/code.png" />
+
+<img src="https://rawcdn.githack.com/pdxjie/feature-play/736bec920931917373a0777635a719fc460c8fa0/asset/code.png" style="width:150px;height:150px;"/>
 
 <h3>项目分析：</h3>
 <h4>前端目录结构：</h4>
